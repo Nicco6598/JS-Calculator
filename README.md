@@ -32,6 +32,7 @@ git clone https://github.com/Nicco6598/JS-CalculatorProject.git
             <script src="js/index.js"></script>
         </div>
     </div>
+    
 ```
 
 ## Index.js functions

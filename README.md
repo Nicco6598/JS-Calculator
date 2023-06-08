@@ -12,6 +12,10 @@ Additionally, JSCalculator provides the option to "decrease" the displayed value
 
 Overall, JSCalculator offers a user-friendly interface and powerful functionalities to enhance mathematical operations. Whether you need to increase, reset, or decrease values, this JavaScript calculator provides a convenient and efficient solution for manipulating numerical data on the screen.
 
+## Test project link
+
+[Try It.](https://jscalculator-8da4c.web.app/).
+
 ## Installation
 
 Use the Git Bash terminal to clone the repository locally.

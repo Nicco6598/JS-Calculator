@@ -21,7 +21,7 @@ Overall, JSCalculator offers a user-friendly interface and powerful functionalit
 Use the Git Bash terminal to clone the repository locally.
 
 ```gitbash
-git clone https://github.com/Nicco6598/JS-CalculatorProject.git
+git clone https://github.com/Nicco6598/JS-Calculator.git
 ```
 
 ## Index.html buttons and counter DOM

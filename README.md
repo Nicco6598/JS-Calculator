@@ -24,22 +24,31 @@ Use the Git Bash terminal to clone the repository locally.
 git clone https://github.com/Nicco6598/JS-CalculatorProject.git
 ```
 
-## Index.html buttons and counter
+## Index.html buttons and counter DOM
 
 ```html
-<label id="countLabel">0</label><br>
-    <div class="container">
-        <div class="vertical-center"></div>
-            <button id="decreaseBtn">decrease</button>
-            <button id="resetBtn">reset</button>
-            <button id="increaseBtn">increase</button>
-            <script src="js/index.js"></script>
-        </div>
-    </div>
+<script>
+  var label = document.createElement("LABEL");
+  label.innerHTML = 0;
+  label.id = "countLabel";
+  document.body.appendChild(label);
+  const buttonD = document.createElement('button');
+  buttonD.id = "decreaseBtn";
+  buttonD.textContent = "-";
+  const buttonR = document.createElement('button');
+  buttonR.id = "resetBtn";
+  buttonR.textContent = "RESET";
+  const buttonI = document.createElement('button');
+  buttonI.id = "increaseBtn";
+  buttonI.textContent = "+";
+  document.getElementById('vertical-center').append(buttonD);
+  document.getElementById('vertical-center').append(buttonR);
+  document.getElementById('vertical-center').append(buttonI);
+</script>
     
 ```
 
-## Index.js functions
+## Index.html <script> functions
 
 ```js
 let count = 0;

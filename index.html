@@ -9,17 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
 
 </head>
 <body>
-    <label id="countLabel">0</label><br>
     <div class="container">
-        <div class="vertical-center"></div>
-            <button id="decreaseBtn">decrease</button>
-            <button id="resetBtn">reset</button>
-            <button id="increaseBtn">increase</button>
-            <script src="js/index.js"></script>
+        <div id ="buttons" class="vertical-center"></div>
         </div>
     </div>
 </body>
+<script>
+  const label = document.createElement ('label');
+  label.textContent = "0";
+  label.id = "countLabel";
+  const buttonD = document.createElement('button');
+  buttonD.id = "decreaseBtn";
+  buttonD.textContent = "-";
+  const buttonR = document.createElement('button');
+  buttonR.id = "resetBtn";
+  buttonR.textContent = "RESET";
+  const buttonI = document.createElement('button');
+  buttonI.id = "increaseBtn";
+  buttonI.textContent = "+";
+  document.getElementById('buttons').append(buttonD);
+  document.getElementById('buttons').append(buttonR);
+  document.getElementById('buttons').append(buttonI);
+</script>
 </html>

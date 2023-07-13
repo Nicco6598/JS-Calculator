@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="js/index.js"></script>
 
 </head>
 <body>
     <div class="container">
-        <div id ="buttons" class="vertical-center"></div>
+        <div id="vertical-center"></div>
         </div>
     </div>
 </body>
 <script>
-  const label = document.createElement ('label');
-  label.textContent = "0";
+  var label = document.createElement("LABEL");
+  label.innerHTML = 0;
   label.id = "countLabel";
+  document.body.appendChild(label);
   const buttonD = document.createElement('button');
   buttonD.id = "decreaseBtn";
   buttonD.textContent = "-";
@@ -31,8 +31,25 @@
   const buttonI = document.createElement('button');
   buttonI.id = "increaseBtn";
   buttonI.textContent = "+";
-  document.getElementById('buttons').append(buttonD);
-  document.getElementById('buttons').append(buttonR);
-  document.getElementById('buttons').append(buttonI);
+  document.getElementById('vertical-center').append(buttonD);
+  document.getElementById('vertical-center').append(buttonR);
+  document.getElementById('vertical-center').append(buttonI);
+
+  let count = 0;
+
+document.getElementById("decreaseBtn").onclick = function(){
+    count-=1;
+    document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("resetBtn").onclick = function(){
+    count=0;
+    document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("increaseBtn").onclick = function(){
+    count+=1;
+    document.getElementById("countLabel").innerHTML = count;
+}
 </script>
 </html>
